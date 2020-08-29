@@ -11,15 +11,8 @@
 <p align="center">
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/rocketseat/bootcamp-gostack-desafio-04?color=%2304D361">
 
-  <a href="https://rocketseat.com.br">
-    <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%2304D361">
-  </a>
-
   <img alt="License" src="https://img.shields.io/badge/license-MIT-%2304D361">
 
-  <a href="https://github.com/Rocketseat/bootcamp-gostack-desafio-04/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/rocketseat/bootcamp-gostack-desafio-04?style=social">
-  </a>
 </p>
 
 <p align="center">
@@ -120,10 +113,48 @@ yarn add @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli -
 yarn add react react-dom
 ```
 
+4.Criar arquivo de configuração do babel (babel.config.js)
+
+```
+module.exports = {
+  presets: ["@babel/preset-env", "@babel/preset-react"],
+};
+```
+
+5.Criar arquivo de configuração do webpack (webpack.config.js)
+
+```
+console.log('nhaa')
+```
+
+6. Adicionar script de build no package.json
+
+```
+"scripts" : {
+  "build": "webpack --mode development"
+}
+```
+
+7. Criar o arquivo index.html na pasta public, escrever estrutura básica do html 5 e importar o bundle.js
+
+8. Instalar biblioteca para reiniciar automaticamente o servidor ao salvar o código.
+
+```
+yarn add webpack-dev-server -D
+```
+
+9. Adicionar script de dev no package.json
+
+```
+"script": {
+  "dev": "webpack-dev-server --mode development"
+}
+```
+
 ## :memo: Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
 ---
 
-Feito com ♥ by Rocketseat :wave: [Entre na nossa comunidade!](https://discordapp.com/invite/gCRAFhc)
+Feito com ♥ by Ryan Alencar :wave: [Instagram](https://www.instagram.com/ryanalencar_1701/?hl=pt-br)
